@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta nam e="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Daisy UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Google font embedded link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <title>Emergency Service</title>
+  </head>
+  <body>
+    <nav class="flex justify-between m-9">
+      <div class="left-side flex justify-center items-center gap-4">
+        <img
+          src="assets/logo.png"
+          alt="Image of BD map"
+          class="max-w-10 h-auto"
+        />
+
+        <p class="text-[#006747] hind-madurai-bold">
+          Emergency <br />
+          Services
+        </p>
+      </div>
+
+      <div class="right-side flex justify-center items-center gap-2">
+        <div class="bg- rounded-xl p-2 flex gap-1 items-center">
+          <span id="heart-counter">0</span>
+          <img id="heart-ico" src="assets/heart.png" alt="" class="max-w-7" />
+        </div>
+        <div class="flex gap-1 items-center rounded-xl p-2">
+          <span id="coin-counter">100</span>
+          <img id="coin-ico" src="assets/coin.png" alt="" class="max-w-7" />
+        </div>
+        <div>
+          <button
+            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl !bg-[#00A63E] hover:!bg-green-700 !text-white"
+          >
+            <span>2</span> Copy
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="max-w-full h-auto bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]"
+    >
+      <div class="m-2 p-4">
+        <img src="assets/logo-dark.png" alt="" class="w-16 mx-auto" />
+        <h1 class="text-white hind-madurai-bold text-center">
+          Emergency Service Directory
+        </h1>
+        <p class="text-white hind-madurai-regular text-center">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
+    </header>
+    <main class="ml-9 mr-9 mt-4">
+      <div class="help-section border-2 border-yellow-300 max-w-[70%]">
+        <div class="card">
+          <div class="card-info">
+            <div class="w-14 h-auto border-1 border-red-500">
+              <img src="assets/emergency.png" alt="" />
+            </div>
+          </div>
+          <div class="card-action"></div>
+        </div>
+      </div>
+
+      <div class="sidebar border-2 border-b-blue-600 max-w-[30%]"></div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
