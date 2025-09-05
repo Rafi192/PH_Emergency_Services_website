@@ -73,9 +73,9 @@
         </p>
       </div>
     </header>
-    <main class="ml-9 mr-9 mt-4 flex gap-4">
+    <main class="ml-9 mr-9 mt-6 mb-11 flex gap-4">
       <div
-        class="help-section max-w-[75%] grid grid-cols-3 gap-4 md:grid grid-cols-2 sm:grid grid-cols-1"
+        class="help-section w-[75%] grid grid-cols-3 gap-4 md:grid grid-cols-2 sm:grid grid-cols-1"
       >
         <!-- Card starts here -->
 
@@ -86,7 +86,7 @@
             <div class="w-12 h-auto bg-[#FFE3E2] rounded-xl p-2">
               <img src="assets/emergency.png" alt="" class="w-7 h-7 mx-auto" />
             </div>
-            <div>
+            <div class="heart">
               <i class="fa-regular fa-heart"></i>
             </div>
           </div>
@@ -126,7 +126,7 @@
             <div class="w-12 h-auto bg-[#FFE3E2] rounded-xl p-2">
               <img src="assets/police.png" alt="" class="w-7 h-7 mx-auto" />
             </div>
-            <div>
+            <div class="heart">
               <i class="fa-regular fa-heart"></i>
             </div>
           </div>
@@ -170,7 +170,7 @@
                 class="w-7 h-7 mx-auto"
               />
             </div>
-            <div>
+            <div class="heart">
               <i class="fa-regular fa-heart"></i>
             </div>
           </div>
@@ -444,7 +444,64 @@
         <!-- Card ends here -->
       </div>
 
-      <div class="sidebar border-2 border-b-blue-600 max-w-[30%]"></div>
+      <div class="sidebar shadow w-[24%] p-6">
+        <div class="flex justify-between items-center">
+          <div class="hind-madurai-semibold">
+            <i class="fa-solid fa-clock-rotate-left text-gray-500"></i> Call
+            History
+          </div>
+          <div class="">
+            <button class="bg-[#00A63E] p-2 rounded-2xl text-white">
+              Clear
+            </button>
+          </div>
+        </div>
+
+        <!-- History segments starts here -->
+        <div
+          class="flex justify-between align-middle items-center mb-4 p-3 shadow-md rounded-md"
+        >
+          <div>
+            <p>Fire service Number</p>
+            <p>999</p>
+          </div>
+          <div id="timebox">
+            <script>
+              function showTime() {
+                const now = new Date();
+                let hours = now.getHours;
+                const minutes = now.getMinutes().toString().padStart(2, "0");
+                const seconds = now.getSeconds().toString().padStart(2, "0");
+
+                const ampm = hours >= 12 ? "PM" : "AM";
+                hours = hours % 12 || 12; //converting 0 to 12 for midnight;
+
+                const timeString = `${hours}:${minutes}:${ampm}`;
+                document.getElementById("timebox").textContent = timeString;
+              }
+              showTime();
+            </script>
+          </div>
+        </div>
+        <!-- History segments ends here -->
+
+        <!-- History segments starts here -->
+        <div
+          class="flex justify-between align-middle items-center mb-4 p-3 shadow-md rounded-md"
+        >
+          <div>
+            <p>Anti Corruption Helpline</p>
+            <p>999</p>
+          </div>
+          <div id="timebox2">
+            <!-- <script>
+             
+              // showTime();
+            </script> -->
+          </div>
+        </div>
+        <!-- History segments ends here -->
+      </div>
     </main>
 
     <script src="index.js"></script>

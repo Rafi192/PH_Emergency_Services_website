@@ -27,6 +27,22 @@ coinIco.addEventListener('click', ()=> {
 })
 
 
+// Function to increase counter by clicking on any heart icon
 
 
-// 
+
+// call history actions
+
+ function showTime() {
+                const now = new Date();
+                let hours = now.getHours;
+                const minutes = now.getMinutes().toString().padStart(2, "0");
+                const seconds = now.getSeconds().toString().padStart(2, "0");
+
+                const ampm = hours >= 12 ? "PM" : "AM";
+                hours = hours % 12 || 12; //converting 0 to 12 for midnight;
+
+                const timeString = `${hours}:${minutes}:${ampm}`;
+                document.getElementById("timebox2").textContent = timeString;
+              }
+              showTime();
