@@ -23,9 +23,10 @@
     <link rel="stylesheet" href="styles/styles.css" />
 
     <title>Emergency Service</title>
+    <link rel="icon" href="icons/emergency_call.ico" type="image/x-icon" />
   </head>
   <body>
-    <nav class="flex justify-between m-9">
+    <nav class="flex flex-row justify-between m-9">
       <div class="left-side flex justify-center items-center gap-4">
         <img
           src="assets/logo.png"
@@ -40,17 +41,17 @@
       </div>
 
       <div class="right-side flex justify-center items-center gap-2">
-        <div class="bg- rounded-xl p-2 flex gap-1 items-center">
-          <span id="heart-counter">0</span>
+        <div class="bg- rounded-xl p-2 flex gap-1 items-center bg-customGreen">
+          <span id="heart-counter" class="hind-madurai-bold">0</span>
           <img id="heart-ico" src="assets/heart.png" alt="" class="max-w-7" />
         </div>
         <div class="flex gap-1 items-center rounded-xl p-2">
-          <span id="coin-counter">100</span>
+          <span id="coin-counter" class="hind-madurai-bold">100</span>
           <img id="coin-ico" src="assets/coin.png" alt="" class="max-w-7" />
         </div>
         <div>
           <button
-            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl !bg-[#00A63E] hover:!bg-green-700 !text-white"
+            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl !bg-[#00A63E] hover:!bg-green-700 !text-white !rounded-xl"
           >
             <span>2</span> Copy
           </button>
@@ -94,8 +95,134 @@
             <p class="text-xs text-gray-500 mb-4">National Emergency</p>
 
             <h3 class="text-lg hind-madurai-bold">999</h3>
-            <div class="bg-[#FFE3E2] rounded-lg w-7 h-auto text-center p-1">
+            <div
+              class="bg-[#FFE3E2] rounded-lg max-w-fit h-auto text-center p-1"
+            >
               <p class="text-xs text-gray-500">All</p>
+            </div>
+          </div>
+          <div class="card-action font-light mt-2">
+            <button
+              class="btn btn-xs !bg-white !text-gray-500 !p-2 !text-center !rounded-md w-[48%]"
+            >
+              <i class="fa-regular fa-copy"></i>Copy
+            </button>
+
+            <button
+              class="btn btn-xs !bg-green-600 !text-white !p-2 !text-center !rounded-md w-[48%]"
+            >
+              <i class="fa-solid fa-phone"></i>Call
+            </button>
+          </div>
+        </div>
+        <!-- Card ends here -->
+
+        <!-- Card starts here -->
+
+        <!-- border-1 border-[#FFE3E2] -->
+
+        <div class="card p-6 shadow">
+          <div class="card-header flex justify-between items-center">
+            <div class="w-12 h-auto bg-[#FFE3E2] rounded-xl p-2">
+              <img src="assets/police.png" alt="" class="w-7 h-7 mx-auto" />
+            </div>
+            <div>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card-info hind-madurai-regular">
+            <h4 class="text-sm hind-madurai-bold">Police Helpline Number</h4>
+            <p class="text-xs text-gray-500 mb-4">Police</p>
+
+            <h3 class="text-lg hind-madurai-bold">999</h3>
+            <div
+              class="bg-[#FFE3E2] rounded-lg max-w-fit h-auto text-center p-1"
+            >
+              <p class="text-xs text-gray-500">Police</p>
+            </div>
+          </div>
+          <div class="card-action font-light mt-2">
+            <button
+              class="btn btn-xs !bg-white !text-gray-500 !p-2 !text-center !rounded-md w-[48%]"
+            >
+              <i class="fa-regular fa-copy"></i>Copy
+            </button>
+
+            <button
+              class="btn btn-xs !bg-green-600 !text-white !p-2 !text-center !rounded-md w-[48%]"
+            >
+              <i class="fa-solid fa-phone"></i>Call
+            </button>
+          </div>
+        </div>
+        <!-- Card ends here -->
+
+        <!-- Card starts here -->
+
+        <!-- border-1 border-[#FFE3E2] -->
+
+        <div class="card p-6 shadow">
+          <div class="card-header flex justify-between items-center">
+            <div class="w-12 h-auto bg-[#FFE3E2] rounded-xl p-2">
+              <img
+                src="assets/fire-service.png"
+                alt=""
+                class="w-7 h-7 mx-auto"
+              />
+            </div>
+            <div>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card-info hind-madurai-regular">
+            <h4 class="text-sm hind-madurai-bold">Fire Service Number</h4>
+            <p class="text-xs text-gray-500 mb-4">Fire Service</p>
+
+            <h3 class="text-lg hind-madurai-bold">999</h3>
+            <div
+              class="bg-[#FFE3E2] rounded-lg max-w-fit h-auto text-center p-1"
+            >
+              <p class="text-xs text-gray-500">Fire</p>
+            </div>
+          </div>
+          <div class="card-action font-light mt-2">
+            <button
+              class="btn btn-xs !bg-white !text-gray-500 !p-2 !text-center !rounded-md w-[48%]"
+            >
+              <i class="fa-regular fa-copy"></i>Copy
+            </button>
+
+            <button
+              class="btn btn-xs !bg-green-600 !text-white !p-2 !text-center !rounded-md w-[48%]"
+            >
+              <i class="fa-solid fa-phone"></i>Call
+            </button>
+          </div>
+        </div>
+        <!-- Card ends here -->
+
+        <!-- Card starts here -->
+
+        <!-- border-1 border-[#FFE3E2] -->
+
+        <div class="card p-6 shadow">
+          <div class="card-header flex justify-between items-center">
+            <div class="w-12 h-auto bg-[#FFE3E2] rounded-xl p-2">
+              <img src="assets/ambulance.png" alt="" class="w-7 h-7 mx-auto" />
+            </div>
+            <div>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="card-info hind-madurai-regular">
+            <h4 class="text-sm hind-madurai-bold">Ambulance Service Number</h4>
+            <p class="text-xs text-gray-500 mb-4">Ambulance</p>
+
+            <h3 class="text-lg hind-madurai-bold">1994-999999</h3>
+            <div
+              class="bg-[#FFE3E2] rounded-lg max-w-fit h-auto text-center p-1"
+            >
+              <p class="text-xs text-gray-500">Health</p>
             </div>
           </div>
           <div class="card-action font-light mt-2">
@@ -128,12 +255,14 @@
             </div>
           </div>
           <div class="card-info hind-madurai-regular">
-            <h4 class="text-sm hind-madurai-bold">National Emergency Number</h4>
-            <p class="text-xs text-gray-500 mb-4">National Emergency</p>
+            <h4 class="text-sm hind-madurai-bold">Woman & Child Helpline</h4>
+            <p class="text-xs text-gray-500 mb-4">Woman & child Helpline</p>
 
-            <h3 class="text-lg hind-madurai-bold">999</h3>
-            <div class="bg-[#FFE3E2] rounded-lg w-7 h-auto text-center p-1">
-              <p class="text-xs text-gray-500">All</p>
+            <h3 class="text-lg hind-madurai-bold">109</h3>
+            <div
+              class="bg-[#FFE3E2] rounded-lg max-w-fit h-auto text-center p-1"
+            >
+              <p class="text-xs text-gray-500">Help</p>
             </div>
           </div>
           <div class="card-action font-light mt-2">
@@ -166,12 +295,14 @@
             </div>
           </div>
           <div class="card-info hind-madurai-regular">
-            <h4 class="text-sm hind-madurai-bold">National Emergency Number</h4>
-            <p class="text-xs text-gray-500 mb-4">National Emergency</p>
+            <h4 class="text-sm hind-madurai-bold">Anti Corruption Helpline</h4>
+            <p class="text-xs text-gray-500 mb-4">Anti-Corruption</p>
 
-            <h3 class="text-lg hind-madurai-bold">999</h3>
-            <div class="bg-[#FFE3E2] rounded-lg w-7 h-auto text-center p-1">
-              <p class="text-xs text-gray-500">All</p>
+            <h3 class="text-lg hind-madurai-bold">106</h3>
+            <div
+              class="bg-[#FFE3E2] rounded-lg max-w-fit h-auto text-center p-1"
+            >
+              <p class="text-xs text-gray-500">Govt.</p>
             </div>
           </div>
           <div class="card-action font-light mt-2">
@@ -204,12 +335,14 @@
             </div>
           </div>
           <div class="card-info hind-madurai-regular">
-            <h4 class="text-sm hind-madurai-bold">National Emergency Number</h4>
-            <p class="text-xs text-gray-500 mb-4">National Emergency</p>
+            <h4 class="text-sm hind-madurai-bold">Electricity Helpline</h4>
+            <p class="text-xs text-gray-500 mb-4">Electricity Outage</p>
 
-            <h3 class="text-lg hind-madurai-bold">999</h3>
-            <div class="bg-[#FFE3E2] rounded-lg w-7 h-auto text-center p-1">
-              <p class="text-xs text-gray-500">All</p>
+            <h3 class="text-lg hind-madurai-bold">16216</h3>
+            <div
+              class="bg-[#FFE3E2] rounded-lg max-w-fit h-auto text-center p-1"
+            >
+              <p class="text-xs text-gray-500">Electricity</p>
             </div>
           </div>
           <div class="card-action font-light mt-2">
@@ -242,12 +375,14 @@
             </div>
           </div>
           <div class="card-info hind-madurai-regular">
-            <h4 class="text-sm hind-madurai-bold">National Emergency Number</h4>
-            <p class="text-xs text-gray-500 mb-4">National Emergency</p>
+            <h4 class="text-sm hind-madurai-bold">Brac Helpline</h4>
+            <p class="text-xs text-gray-500 mb-4">Brac</p>
 
-            <h3 class="text-lg hind-madurai-bold">999</h3>
-            <div class="bg-[#FFE3E2] rounded-lg w-7 h-auto text-center p-1">
-              <p class="text-xs text-gray-500">All</p>
+            <h3 class="text-lg hind-madurai-bold">16445</h3>
+            <div
+              class="bg-[#FFE3E2] rounded-lg max-w-fit h-auto text-center p-1"
+            >
+              <p class="text-xs text-gray-500">NGO</p>
             </div>
           </div>
           <div class="card-action font-light mt-2">
@@ -280,12 +415,16 @@
             </div>
           </div>
           <div class="card-info hind-madurai-regular">
-            <h4 class="text-sm hind-madurai-bold">National Emergency Number</h4>
-            <p class="text-xs text-gray-500 mb-4">National Emergency</p>
+            <h4 class="text-sm hind-madurai-bold">
+              Bangladesh Railway Helpline
+            </h4>
+            <p class="text-xs text-gray-500 mb-4">Bangladesh Railway</p>
 
-            <h3 class="text-lg hind-madurai-bold">999</h3>
-            <div class="bg-[#FFE3E2] rounded-lg w-7 h-auto text-center p-1">
-              <p class="text-xs text-gray-500">All</p>
+            <h3 class="text-lg hind-madurai-bold">163</h3>
+            <div
+              class="bg-[#FFE3E2] rounded-lg max-w-fit h-auto text-center p-1"
+            >
+              <p class="text-xs text-gray-500">Travel</p>
             </div>
           </div>
           <div class="card-action font-light mt-2">
