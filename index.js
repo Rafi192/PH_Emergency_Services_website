@@ -134,3 +134,42 @@ for(const btn of callBtns){
 
 //clear history buttoon function
 
+const clearBtn = document.getElementById("clear-history");
+
+clearBtn.addEventListener("click", () => {
+  callHistoryContainer.innerHTML = ""; 
+});
+
+// Copy btn- functionality
+
+const copyButtons = document.querySelectorAll(".copy-btn");
+
+
+// Lopping  through eevery button
+copyButtons.forEach(button => {
+  button.addEventListener("click", () => {
+
+    getCount("copy-span") // Increasing the count of every copy
+
+    const card = button.closest(".card");
+
+    const textToCopy = card.querySelector(".service-number").textContent;
+
+    // Copy text to clipboard
+    navigator.clipboard.writeText(textToCopy)
+      .then(() => {
+        alert(`Number ${textToCopy} copied to clipboard!`);
+      })
+      .catch(err => {
+        console.error("Failed to copy: ", err);
+      });
+  });
+});
+
+
+
+// Copy button increase function
+
+// const copySpan = document.getElementById("copy-span");
+
+
