@@ -28,6 +28,18 @@ coinIco.addEventListener('click', ()=> {
 
 
 // Function to increase counter by clicking on any heart icon
+const miniHeart = document.getElementsByClassName("heart");
+for(let heart of miniHeart){
+    heart.addEventListener('click', ()=>{
+        getCount("heart-counter");
+    })
+}
+
+// function increaseCount(cls){
+
+//     const heart = document.getElementsByClassName(cls);
+
+// }
 
 
 
